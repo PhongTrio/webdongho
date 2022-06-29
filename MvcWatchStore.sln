@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcWatchStore", "MvcWatchStore\MvcWatchStore.csproj", "{A11BC2E0-4337-4029-9B5F-948178DC5583}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A11BC2E0-4337-4029-9B5F-948178DC5583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11BC2E0-4337-4029-9B5F-948178DC5583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11BC2E0-4337-4029-9B5F-948178DC5583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11BC2E0-4337-4029-9B5F-948178DC5583}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1835DACA-D580-49AB-A6D5-3766A1504EDD}
+	EndGlobalSection
+EndGlobal

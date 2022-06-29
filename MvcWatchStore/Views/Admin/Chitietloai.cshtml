@@ -1,0 +1,28 @@
+﻿@model MvcWatchStore.Models.LOAISP
+
+@{
+    ViewBag.Title = "Chitietloai";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 style="text-align:center;color:red">THÔNG TIN CHI TIẾT LOẠI</h2>
+
+
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            TÊN LOẠI:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLoai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Điều Chỉnh", "Sualoai", new { id = Model.MaLoai }) |
+    @Html.ActionLink("Trở Về", "Loai")
+</p>

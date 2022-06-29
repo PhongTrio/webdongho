@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MvcWatchStore.Models.DONGHO>
+
+@{
+    ViewBag.Title = "SPTheothuonghieu";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+<h3 style="text-align:center; color:red">ĐỒNG HỒ THEO THƯƠNG HIỆU</h3>
+
+<div class="row">
+    @foreach (var dongho in Model)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "WatchStore", new { id = dongho.Madongho })">
+                    <img alt="@dongho.Tendongho" src="~/Hinhsanpham/@dongho.Anhbia" width="200" />
+
+                    <div>
+                        <br />
+                        <h4 style="text-align:center">
+                            @dongho.Tendongho
+                        </h4>
+                        <h5 style="text-align:center; color:darkred">
+                            @String.Format("{0:0,0}", @dongho.Giaban) VNĐ
+                        </h5>
+                        <p></p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+
+            </div>
+        </div>
+    }
+</div>
+
+
